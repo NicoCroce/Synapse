@@ -1,0 +1,38 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "{p,[!p]*,pa,p[!a]*,pac,pa[!c]*,pack,pac[!k]*,packa,pack[!a]*,packag,packa[!g]*,package,packag[!e]*,package[!s]*,packages?*}": true,
+    "packages/{a,[!a]*,ap,a[!p]*,ap[!p]*,app?*}": true
+  },
+  "hide-files.files": ["node_modules", ".vscode", ".husky"],
+  "folder-scopes.scopes": {
+    "src-users-server": {
+      "Monorepo": {
+        "scopedFolderPath": "",
+        "excludedPaths": ["packages/app/node_modules"]
+      }
+    },
+    "Front - APP": {
+      "Monorepo": {
+        "scopedFolderPath": "packages/app"
+      }
+    },
+    "Server - SRC": {
+      "Monorepo": {
+        "scopedFolderPath": "packages/server"
+      }
+    }
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}

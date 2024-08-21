@@ -1,5 +1,3 @@
-import { PRODUCTS_ROUTE } from '@app/Domains/Products/ProductsRoutes';
-import { USERS_ROUTE } from '@app/Domains/Users/UsersRoutes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faUser } from '@fortawesome/free-solid-svg-icons';
 import { NavLink, NavLinkRenderProps } from 'react-router-dom';
@@ -14,11 +12,11 @@ export const NavBar = ({ className = '' }: { className?: string }) => {
 
   return (
     <nav className={`${className} navbar flex flex-col gap-2 md:p-4`}>
-      <NavLink to={USERS_ROUTE} className={isActiveLink}>
+      <NavLink to="/" className={isActiveLink}>
         <FontAwesomeIcon icon={faUser} />
         Usuarios
       </NavLink>
-      <NavLink to={PRODUCTS_ROUTE} className={isActiveLink}>
+      <NavLink to="/" className={isActiveLink}>
         <FontAwesomeIcon icon={faFile} />
         Productos
       </NavLink>
